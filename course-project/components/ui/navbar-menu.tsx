@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
+import { type AnimationGeneratorType, motion } from "motion/react";
 
 
 
-const transition = {
+const transition: { type: AnimationGeneratorType; mass: number; damping: number; stiffness: number; restDelta: number; restSpeed: number } = {
   type: "spring",
   mass: 0.5,
   damping: 11.5,
